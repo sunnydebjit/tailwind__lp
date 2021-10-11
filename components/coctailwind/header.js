@@ -3,8 +3,8 @@ import Link from 'next/link';
 function Header() {
 	return (
 		<>
-			<nav className='bg-blue-500'>
-				<div className='container mx-auto bg-blue-100 flex justify-between p-6 lg:px-0'>
+			<nav className='bg-blue-900'>
+				<div className='container mx-auto bg-teal-500 flex justify-between p-6 lg:px-0'>
 					<ul>
 						{/* <Image
 							src='/dm-logo.svg'
@@ -19,7 +19,7 @@ function Header() {
 							<a>Tailwind</a>
 						</Link>
 						<Link href='/coctailwind/login'>
-							<a>About</a>
+							<a>About Messi</a>
 						</Link>
 						<Link href='/coctailwind/userpage'>
 							<a>What You'll Learn</a>
