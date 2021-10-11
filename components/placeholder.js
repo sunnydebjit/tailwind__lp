@@ -1,4 +1,5 @@
 import Framer__example from './framer__onload';
+import Link from 'next/link';
 
 export default function Placeholder() {
 	return (
@@ -10,7 +11,13 @@ export default function Placeholder() {
 						<p className='text-base md:text-lg'>
 							Initial starting point for this project. Feel free to edit me.
 						</p>
-						<p className='inline-block text-xs'>
+						<p className='text-base md:text-lg'>
+							View the{' '}
+							<Link href='/coctailwind'>
+								<span class=' cursor-pointer underline'>Tailwind Project</span>
+							</Link>
+						</p>
+						<p className=' text-xs'>
 							Made with <span className=' inline-block animate-bounce'>💝</span>{' '}
 							by <span className='font-bold'>Debjit Majumdar</span>
 						</p>
