@@ -2,7 +2,7 @@ import Footer from '../../components/coctailwind/footer';
 import Header from '../../components/coctailwind/header';
 import Main from '../../components/coctailwind/main';
 
-function CocTailwind() {
+function Coctailwind() {
 	return (
 		<div>
 			<>
@@ -14,4 +14,4 @@ function CocTailwind() {
 	);
 }
 
-export default CocTailwind;
+export default Coctailwind;

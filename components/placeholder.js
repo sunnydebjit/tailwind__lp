@@ -14,7 +14,9 @@ export default function Placeholder() {
 						<p className='text-base md:text-lg'>
 							View the{' '}
 							<Link href='/coctailwind'>
-								<span class=' cursor-pointer underline'>Tailwind Project</span>
+								<span className=' cursor-pointer underline'>
+									Tailwind Project
+								</span>
 							</Link>
 						</p>
 						<p className=' text-xs'>
