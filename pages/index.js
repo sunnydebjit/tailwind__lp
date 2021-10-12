@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import Placeholder from '../components/placeholder';
+import { useRouter } from 'next/router';
+import Main from '../components/coctailwind/main';
 
 export default function Home() {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
@@ -11,7 +15,8 @@ export default function Home() {
 				<meta name='keywords' content='tailwind landing page' />
 				<link rel='icon' href='/dm-logo.svg' />
 			</Head>
-			<Placeholder />
+			<Main />
+			{console.log(router.query.id)}
 		</>
 	);
 }
