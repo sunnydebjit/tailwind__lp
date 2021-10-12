@@ -1,6 +1,6 @@
 function Footer() {
 	return (
-		<footer className=' bg-teal-500'>
+		<footer className=' '>
 			<div className='container mx-auto py-10'>
 				<div className='flex justify-between'>
 					<div>

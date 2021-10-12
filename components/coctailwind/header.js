@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Header() {
 	return (
 		<>
-			<nav className='text-gray-500 '>
+			<nav className='text-gray-600 '>
 				<div className='container mx-auto flex justify-between p-6 lg:px-0 '>
 					<div className='space-x-4 flex items-center'>
 						{/* <Image
@@ -21,7 +21,7 @@ function Header() {
 							</a>
 						</Link>
 						<Link href='/coctailwind/login'>
-							<a className='hover:text-gray-900'>About Messi</a>
+							<a className='hover:text-gray-900'>About</a>
 						</Link>
 						<Link href='/coctailwind/userpage'>
 							<a className='hover:text-gray-900'>What You'll Learn</a>
@@ -36,10 +36,10 @@ function Header() {
 					{/* Nav Separator */}
 					<div className='space-x-4 flex items-center'>
 						<Link href='/coctailwind/login'>
-							<a>Login</a>
+							<a className='hover:text-gray-900'>Login</a>
 						</Link>
 						<Link href='/coctailwind/userpage'>
-							<a className='inline-block p-3 bg-purple-300 text-purple-700'>
+							<a className='inline-block p-3 bg-purple-300 text-purple-700 rounded shadow'>
 								Signup
 							</a>
 						</Link>
