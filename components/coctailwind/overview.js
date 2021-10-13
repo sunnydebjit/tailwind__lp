@@ -1,7 +1,7 @@
 function Overview() {
 	return (
 		<>
-			<section class='relative bg-purple-700 md:pt-12 pb-24'>
+			<section className='relative bg-purple-700 md:pt-12 pb-24'>
 				{/* Gray  Bar */}
 				<div className='absolute bg-gray-300 bottom-0 inset-x-0 h-64'></div>
 				{/* Gray Bar ends */}
@@ -12,7 +12,7 @@ function Overview() {
 					<div
 						id='left'
 						className='md:flex md:space-x-16 space-y-6 lg:space-y-0'>
-						<div class='md:w-2/3 bg-purple-50 p-12 md:p-16 rounded shadow-2xl text-purple-800 text-base md:text-lg space-y-8 leading-relaxed'>
+						<div className='md:w-2/3 bg-purple-50 p-12 md:p-16 rounded shadow-2xl text-purple-800 text-base md:text-lg space-y-8 leading-relaxed'>
 							<p>
 								Tailwind makes writing CSS easier and lets us customize our
 								designs faster than any other CSS framework. If you want a CSS
