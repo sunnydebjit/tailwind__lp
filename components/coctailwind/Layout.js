@@ -12,7 +12,7 @@ function Layout({ children }) {
 
 					{children}
 				</StyleElements>
-				<Footer />
+				{/* <Footer /> */}
 			</>
 		</div>
 	);
