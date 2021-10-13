@@ -1,14 +1,39 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { SunIcon, MoonIcon } from '@heroicons/react/solid';
+import { useTheme } from 'next-themes';
 
 function Darkbutton() {
-	const [mode, setMode] = useState(false);
-	const toggleDark = () => {
-		setMode(!mode);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+	const { systemTheme, theme, setTheme } = useTheme();
+	const renderThemeChanger = () => {
+		const currentTheme = theme === 'system' ? systemTheme : theme;
+		if (!mounted) return <></>;
+		if (currentTheme === 'dark') {
+			return (
+				<SunIcon
+					className='w-6 h-6 flex-shrink-0 text-gray-50'
+					role='button'
+					onClick={() => setTheme('light')}
+				/>
+			);
+		} else {
+			return (
+				<MoonIcon
+					className='w-6 h-6 flex-shrink-0 text-gray-50'
+					role='button'
+					onClick={() => setTheme('dark')}
+				/>
+			);
+		}
 	};
 
 	return (
-		<div className='fixed bottom-10 right-10 z-30 top p-3 bg-gray-800 hover:bg-gray-900 rounded-full border-4 hover:border-orange-300 border-orange-400 transition duration-500'>
-			<button onClick={toggleDark}>{mode ? `🌕` : '☀️'}</button>
+		<div className=' flex items-center p-1 bg-gray-900 hover:bg-gray-700 rounded-full border-4 hover:border-purple-300 border-purple-400 transition duration-500 dark:border-purple-300'>
+			{renderThemeChanger()}
 		</div>
 	);
 }

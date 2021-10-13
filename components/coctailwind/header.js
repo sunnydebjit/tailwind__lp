@@ -1,23 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Darkbutton from '../darkbutton';
+import Logo from './logo';
 function Header() {
 	return (
 		<>
-			<section className='dark  relative'>
-				<nav className='text-gray-600 dark:text-gray-200 dark:bg-gray-900  '>
+			<section className='relative'>
+				<nav className='text-gray-600 dark:text-gray-200   '>
 					<div className='container mx-auto flex justify-between p-6 lg:px-0 '>
 						<div className='space-x-4 flex items-center'>
-							{/* <Image
-							src='/dm-logo.svg'
-							layout='fixed'
-							height={50}
-							width={50}
-							alt='logo image'
-							href='#'
-							className='cursor-pointer'
-						/> */}
 							<Link href='/'>
-								<a className='text-teal-900 dark:text-teal-200 font-bold text-2xl'>
+								<Logo
+									height={35}
+									className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-105 '
+								/>
+							</Link>
+							<Link href='/'>
+								<a className='text-teal-900 dark:text-teal-50 font-bold text-2xl'>
 									Tailwind Master
 								</a>
 							</Link>
@@ -44,6 +43,7 @@ function Header() {
 						</div>
 						{/* Nav Separator */}
 						<div className='space-x-4 flex items-center'>
+							<Darkbutton />
 							<Link href='/coctailwind/login'>
 								<a className='hover:text-gray-900'>Login</a>
 							</Link>

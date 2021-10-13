@@ -5,11 +5,11 @@ import StyleElements from './styleElements';
 
 function Layout({ children }) {
 	return (
-		<div>
+		<div className='dark:bg-trueGray-900 relative transition duration-500 dark:transition dark:duration-500'>
 			<>
 				<StyleElements>
 					<Header />
-					<Darkbutton />
+
 					{children}
 				</StyleElements>
 				<Footer />

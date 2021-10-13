@@ -15,7 +15,7 @@ function Hero() {
 						</span>
 					</h1>
 					{/* Paragraph */}
-					<p className='mb-8 text-2xl text-gray-700'>
+					<p className='mb-8 text-2xl text-gray-700 dark:text-gray-100'>
 						Make good looking designs quickly. All without a single line of
 						custom CSS.
 					</p>
