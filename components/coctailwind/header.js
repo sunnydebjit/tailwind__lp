@@ -48,7 +48,7 @@ function Header() {
 								<a className='hover:text-gray-900'>Login</a>
 							</Link>
 							<Link href='/coctailwind/userpage'>
-								<a className='hidden lg:inline-block p-3 bg-purple-300 hover:bg-purple-200 text-purple-700 hover:text-purple-600 rounded shadow hover:shadow-xl transition duration-500'>
+								<a className='hidden lg:inline-block p-3 bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 hover:bg-purple-200 text-purple-100 hover:text-white rounded shadow hover:shadow-xl transition duration-500'>
 									Signup
 								</a>
 							</Link>

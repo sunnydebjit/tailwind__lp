@@ -3,7 +3,7 @@ function Overview() {
 		<>
 			<section className='relative bg-purple-700 md:pt-12 pb-24'>
 				{/* Gray  Bar */}
-				<div className='absolute bg-gray-300 bottom-0 inset-x-0 h-64'></div>
+				<div className='absolute bg-gray-300 dark:bg-gray-900 bottom-0 inset-x-0 h-64'></div>
 				{/* Gray Bar ends */}
 				<div className=' relative container mx-auto px-10'>
 					<h2 className='mb-10 text-4xl md:text-6xl font-bold text-purple-100'>

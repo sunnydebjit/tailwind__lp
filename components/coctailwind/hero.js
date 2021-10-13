@@ -24,8 +24,8 @@ function Hero() {
 							<div className='w-full h-full  flex items-center justify-center text-white text-2xl md:text-6xl font-bold'>
 								<div className='space-y-6'>
 									<h1>
-										<span className='text-lime-500'>{`<`}</span>Coder By Night
-										{` `}
+										<span className='text-lime-500'>{`<`}</span>CoderByNight
+										{' ' + ' '}
 										<span className='text-lime-500'>{`/>`}</span>
 									</h1>
 									<p className='text-lg md:text-2xl px-10 md:px-20 font-normal'>
