@@ -4,10 +4,10 @@ import { useTheme } from 'next-themes';
 
 function Darkbutton() {
 	const [mounted, setMounted] = useState(false);
-
 	useEffect(() => {
 		setMounted(true);
 	}, []);
+
 	const { systemTheme, theme, setTheme } = useTheme();
 	const renderThemeChanger = () => {
 		const currentTheme = theme === 'system' ? systemTheme : theme;

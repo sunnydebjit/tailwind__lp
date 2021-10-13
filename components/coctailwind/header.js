@@ -11,7 +11,7 @@ function Header() {
 						<div className='space-x-4 flex items-center'>
 							<Link href='/'>
 								<Logo
-									height={35}
+									height={30}
 									className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-105 '
 								/>
 							</Link>
