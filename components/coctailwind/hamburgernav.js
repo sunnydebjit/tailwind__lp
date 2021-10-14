@@ -23,7 +23,7 @@ function Hamburgernav() {
 	}, [navState]);
 	return (
 		<div
-			className=' p-2 bg-gray-800 rounded-lg shadow-xl relative cursor-pointer lg:hidden'
+			className=' p-2 bg-gray-800 text-white rounded-lg shadow-xl relative cursor-pointer lg:hidden'
 			onClick={navToggler}>
 			{!navState ? (
 				<svg

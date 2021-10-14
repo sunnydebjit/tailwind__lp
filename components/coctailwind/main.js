@@ -1,5 +1,6 @@
 import Aboutme from './aboutme';
 import Hero from './hero';
+import Learn from './learn';
 import Overview from './overview';
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
 			<Hero />
 			<Overview />
 			<Aboutme />
+			<Learn />
 		</>
 	);
 }

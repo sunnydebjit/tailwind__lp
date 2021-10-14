@@ -29,7 +29,7 @@ function Header() {
 				className={`sticky z-50 top-0 ${
 					navColor
 						? 'bg-gradient-to-b from-via dark:from-trueGray-900 dark:via-transparent'
-						: ''
+						: null
 				}`}>
 				<nav className='text-gray-600 dark:text-gray-200'>
 					<div className='container mx-auto flex justify-between p-6 lg:px-0 '>
@@ -70,7 +70,7 @@ function Header() {
 							<Darkbutton />
 							<Hamburgernav />
 
-							<Scrolltotop />
+							{navColor ? <Scrolltotop /> : null}
 
 							<Link href='/coctailwind/login'>
 								<a className='hover:text-gray-900 hidden lg:inline-block'>

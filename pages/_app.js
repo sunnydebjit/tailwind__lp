@@ -7,11 +7,11 @@ function MyNewApp({ Component, pageProps }) {
 	return (
 		<>
 			<ThemeProvider enableSystem={true} attribute='class'>
-				<Framer__onload>
-					<Layout>
-						<Component {...pageProps} />
-					</Layout>
-				</Framer__onload>
+				{/* <Framer__onload> */}
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+				{/* </Framer__onload> */}
 			</ThemeProvider>
 		</>
 	);
