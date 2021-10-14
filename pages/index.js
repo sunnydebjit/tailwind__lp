@@ -13,6 +13,7 @@ export default function Home() {
 				<link rel='icon' href='/dm-logo.svg' />
 			</Head>
 			<Main />
+			{/* <Placeholder /> */}
 		</>
 	);
 }

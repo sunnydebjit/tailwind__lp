@@ -32,7 +32,7 @@ function Darkbutton() {
 	};
 
 	return (
-		<div className=' flex items-center p-1 bg-gray-900 hover:bg-gray-700 rounded-full border-4 hover:border-purple-300 border-purple-400 transition duration-500 dark:border-purple-300'>
+		<div className=' flex items-center p-1 bg-gray-900 hover:bg-gray-700 rounded-full border-4  transition border- duration-500 dark:border-purple-300'>
 			{renderThemeChanger()}
 		</div>
 	);

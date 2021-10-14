@@ -29,9 +29,9 @@ function Aboutme() {
 								height='315'
 								src='https://www.youtube.com/embed/z_6MT2SrS1A'
 								title='YouTube video player'
-								frameborder='0'
+								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-								allowfullscreen></iframe>
+								allowFullScreen></iframe>
 						</div>
 						<div className='bg-gray-50 dark:bg-gray-900 md:w-1/2 border-2 border-gray-700 rounded shadow-xl '>
 							<p className='text-lg text-gray-700 dark:text-white p-4'>
@@ -43,9 +43,9 @@ function Aboutme() {
 								height='315'
 								src='https://www.youtube.com/embed/z_6MT2SrS1A'
 								title='YouTube video player'
-								frameborder='0'
+								frameBorder='0'
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-								allowfullscreen></iframe>
+								allowFullScreen></iframe>
 						</div>
 					</div>
 				</section>
