@@ -54,7 +54,7 @@ function Hamburgernav() {
 					/>
 				</svg>
 			)}
-			{navState ? ItemList(x) : <></>}
+			{navState ? ItemList() : <></>}
 		</div>
 	);
 }
@@ -68,7 +68,7 @@ function ItemList() {
 				<a className='block'>About</a>
 			</Link>
 			<a href='#' className='block'>
-				What You'll learn
+				Learn
 			</a>
 			<a href='#' className='block'>
 				Pricing
