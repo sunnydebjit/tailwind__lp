@@ -30,12 +30,9 @@ function Hero() {
 									</h1>
 									<p className='text-lg md:text-2xl px-10 md:px-20 font-normal'>
 										Hey there! My name is Debjit Majumdar and I founded a web
-										dev tutorial site Hulu 2.0 . We were able to grow to 4M
-										monthly pageviews and $300,000 yearly revenue. Scotch.io was
-										acquired byDigitalOcean in November 2019. Nowadays I'm in
-										search of the best ways to develop and design a business.
-										Hope you enjoy this course and my other one
-										MakeReactApps.com.
+										dev tutorial site Hulu 2.0 . Nowadays I'm in search of the
+										best ways to develop and design a business. Hope you enjoy
+										this course and my other one MakeReactApps.com.
 									</p>
 								</div>
 							</div>
@@ -94,7 +91,7 @@ function Hero() {
 			<section id='hero' className='relative'>
 				{/* Purple Bar */}
 				<div className='absolute bg-purple-700 bottom-0 inset-x-0 h-64'></div>
-				<div className='container mx-auto px-6 lg:px-0 py-24 text-center'>
+				<div className='container mx-auto px-10 py-24 text-center'>
 					{/* Heading */}
 					<h1 className='mb-4 text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-r from-teal-400 via-teal-500 to-purple-500 bg-clip-text'>
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>

@@ -28,11 +28,11 @@ function Header() {
 			<section
 				className={`sticky z-50 top-0 ${
 					navColor
-						? 'bg-gradient-to-b from-via dark:from-trueGray-900 dark:via-transparent'
+						? 'bg-gradient-to-b from-gray-50 via-gray-50 to-transparent dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-transparent'
 						: null
 				}`}>
 				<nav className='text-gray-600 dark:text-gray-200'>
-					<div className='container mx-auto flex justify-between p-6 lg:px-0 '>
+					<div className='container mx-auto  p-10  flex justify-between'>
 						<div className='space-x-4 flex items-center'>
 							<Logo
 								height={30}
@@ -54,11 +54,13 @@ function Header() {
 									What You'll Learn
 								</a>
 							</Link>
-							<Link href='/coctailwind/login'>
-								<a className='hidden lg:inline-block hover:text-gray-900'>
-									Pricing
-								</a>
-							</Link>
+
+							<a
+								href='#pricing'
+								className='hidden lg:inline-block hover:text-gray-900'>
+								Pricing
+							</a>
+
 							<Link href='/coctailwind/userpage'>
 								<a className='hidden lg:inline-block hover:text-gray-900'>
 									FAQ
