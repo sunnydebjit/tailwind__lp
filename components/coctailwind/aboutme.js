@@ -1,7 +1,9 @@
 function Aboutme() {
 	return (
 		<>
-			<div className='md:pt-12 pb-24 bg-gray-300 dark:bg-gray-900 md:text-center'>
+			<section
+				id='about'
+				className='md:pt-12 pb-24 bg-gray-300 dark:bg-gray-900 md:text-center'>
 				<section className='container mx-auto px-10'>
 					<h2 className='mb-3 text-4xl md:text-6xl font-bold text-teal-900 dark:text-teal-300'>
 						My Past Projects
@@ -49,7 +51,7 @@ function Aboutme() {
 						</div>
 					</div>
 				</section>
-			</div>
+			</section>
 		</>
 	);
 }

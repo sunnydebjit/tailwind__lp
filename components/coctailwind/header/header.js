@@ -1,9 +1,11 @@
 import Link from 'next/link';
-import Darkbutton from '../darkbutton';
+
+import Darkbutton from './darkbutton';
 import Hamburgernav from './hamburgernav';
 import Logo from './logo';
 import { useState, useEffect } from 'react';
 import Scrolltotop from './scrolltotop';
+import Scrollable from './scrollable';
 function Header() {
 	const [navColor, SetNavColor] = useState(false);
 	const ChangeNavBg = () => {
@@ -25,21 +27,38 @@ function Header() {
 
 	return (
 		<>
-			<section
+			<nav
 				className={`sticky z-50 top-0 ${
 					navColor
 						? 'bg-gradient-to-b from-gray-50 via-gray-50 to-transparent dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-transparent'
 						: null
 				}`}>
-				<nav className='text-gray-600 dark:text-gray-200'>
+				<section className='text-gray-600 dark:text-gray-200'>
 					<div className='container mx-auto  p-10  flex justify-between'>
 						<div className='space-x-4 flex items-center'>
 							<Logo
 								height={30}
 								className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-105 '
 							/>
+							<Scrollable
+								linkName='Tailwind Master'
+								src='#hero'
+								visibility={'hidden'}
+							/>
+							<Scrollable linkName='About' src='#about' visibility={'hidden'} />
+							<Scrollable
+								linkName={`What You'll Learn`}
+								src='#learn'
+								visibility={'hidden'}
+							/>
+							<Scrollable
+								linkName='Pricing'
+								src='#pricing'
+								visibility={'hidden'}
+							/>
+							<Scrollable linkName='FAQ' src='#faq' visibility={'hidden'} />
 
-							<Link href='/'>
+							{/* <Link href='/'>
 								<a className='text-teal-900 dark:text-teal-50 font-bold text-2xl'>
 									Tailwind Master
 								</a>
@@ -55,17 +74,17 @@ function Header() {
 								</a>
 							</Link>
 
-							<a
+							<Link
 								href='#pricing'
 								className='hidden lg:inline-block hover:text-gray-900'>
-								Pricing
-							</a>
+								<a>Pricing</a>
+							</Link>
 
 							<Link href='/coctailwind/userpage'>
 								<a className='hidden lg:inline-block hover:text-gray-900'>
 									FAQ
 								</a>
-							</Link>
+							</Link> */}
 						</div>
 						{/* Nav Separator */}
 						<div className='space-x-4 flex items-center'>
@@ -86,8 +105,8 @@ function Header() {
 							</Link>
 						</div>
 					</div>
-				</nav>
-			</section>
+				</section>
+			</nav>
 		</>
 	);
 }

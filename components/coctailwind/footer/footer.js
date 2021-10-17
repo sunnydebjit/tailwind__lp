@@ -5,7 +5,10 @@ function Footer() {
 	return (
 		<footer className='overflow-hidden relative pt-24 bg-gradient-to-br dark:from-black from-white dark:to-gray-900 to-gray-300 text-gray-600 dark:text-gray-100'>
 			<StyleElements>
-				<div className='relative container mx-auto px-6 lg:px-0'>
+				{/* Blur ELement */}
+				{/* <div className=' dark:bg-gray-800 opacity-100 absolute top-0 inset-x-0 h-full blur-3xl'></div> */}
+				{/* Blur Ends */}
+				<div className='relative container mx-auto px-10'>
 					{/* Top Footer */}
 					<div className='lg:flex justify-between space-y-12 lg:space-y-0'>
 						{/* Newsletter */}
@@ -36,7 +39,7 @@ function Footer() {
 						</div>
 					</div>
 					{/* Bottom Footer */}
-					<div className='pt-4 my-16 md:flex justify-between border-t border-gray-200 text-gray-600 text-sm text-center md:text-left space-y-4 md:space-y-0'>
+					<div className='pt-4 my-16 md:flex justify-between border-t border-gray-200 text-gray-600 dark:text-gray-200 text-sm text-center md:text-left space-y-4 md:space-y-0'>
 						{/* CopyRight */}
 						<div>Copyright &copy; 2021-4055</div>
 						{/* Links */}

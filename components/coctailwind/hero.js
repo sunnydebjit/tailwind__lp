@@ -93,11 +93,11 @@ function Hero() {
 				<div className='absolute bg-purple-700 bottom-0 inset-x-0 h-64'></div>
 				<div className='container mx-auto px-10 py-24 text-center'>
 					{/* Heading */}
-					<h1 className='mb-4 text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-r from-teal-400 via-teal-500 to-purple-500 bg-clip-text'>
+					<h1 className=' mb-4 text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-r from-teal-400 via-teal-500 to-purple-500 bg-clip-text'>
 						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>
 							Tailwind
 						</span>{' '}
-						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-teal-600 to-purple-500'>
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-teal-600 to-purple-500 '>
 							Master
 						</span>
 					</h1>

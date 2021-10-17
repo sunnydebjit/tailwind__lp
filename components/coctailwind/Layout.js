@@ -1,6 +1,6 @@
-import Darkbutton from '../darkbutton';
+import Darkbutton from './header/darkbutton';
 import Footer from './footer/footer';
-import Header from './header';
+import Header from './header/header';
 import StyleElements from './styleElements';
 
 function Layout({ children }) {
@@ -9,7 +9,9 @@ function Layout({ children }) {
 			<>
 				<StyleElements>
 					<Header />
-
+					{/* Blur ELement */}
+					{/* <div className=' dark:bg-gray-800 opacity-100 absolute top-0 inset-x-0 h-full '></div> */}
+					{/* Blur Ends */}
 					{children}
 				</StyleElements>
 				<Footer />
