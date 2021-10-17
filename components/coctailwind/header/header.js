@@ -11,7 +11,7 @@ function Header() {
 	const ChangeNavBg = () => {
 		if (!window) {
 			return null;
-		} else if (window.scrollY >= 100) {
+		} else if (window.scrollY >= 120) {
 			SetNavColor(true);
 		} else {
 			SetNavColor(false);
@@ -30,15 +30,15 @@ function Header() {
 			<nav
 				className={`sticky z-50 top-0 ${
 					navColor
-						? 'bg-gradient-to-b from-gray-50 via-gray-50 to-transparent dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-transparent'
+						? 'bg-gradient-to-b from-gray-50 to-transparent dark:bg-gradient-to-b dark:from-black  dark:to-transparent '
 						: null
 				}`}>
-				<section className='text-gray-600 dark:text-gray-200'>
+				<section className='text-gray-600 dark:text-gray-300'>
 					<div className='container mx-auto  p-10  flex justify-between'>
 						<div className='space-x-4 flex items-center'>
 							<Logo
 								height={30}
-								className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-105 '
+								className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-110 transition duration-200 '
 							/>
 							<Scrollable
 								linkName='Tailwind Master'
@@ -86,15 +86,16 @@ function Header() {
 								</a>
 							</Link> */}
 						</div>
+
 						{/* Nav Separator */}
-						<div className='space-x-4 flex items-center'>
+						<div className=' relative space-x-4 flex items-center'>
 							<Darkbutton />
 							<Hamburgernav />
 
 							{navColor ? <Scrolltotop /> : null}
 
 							<Link href='/coctailwind/login'>
-								<a className='hover:text-gray-900 hidden lg:inline-block'>
+								<a className='hover:text-gray-900 dark:hover:text-gray-50 hidden lg:inline-block'>
 									Login
 								</a>
 							</Link>

@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import BackgroundAnimation from '../BackgroundAnimation';
+import BackgroundAnimation from './BackgroundAnimation';
+import Logo from '../header/logo';
 function Hero() {
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => {
@@ -15,25 +16,25 @@ function Hero() {
 		if (currentTheme === 'dark') {
 			return (
 				<>
-					<div className='w-auto h-1/2'>
-						<BackgroundAnimation
-							className='w-6 h-6 flex-shrink-0 '
-							// onClick={() => setTheme('light')}
-						/>
-						<div className='absolute  top-0  w-full h-full my-auto'>
-							<div className='w-full h-full  flex items-center justify-center text-white text-2xl md:text-6xl font-bold'>
-								<div className='space-y-6'>
-									<h1>
-										<span className='text-lime-500'>{`<`}</span>CoderByNight
+					<div
+						id='teaser__image'
+						className='relative rounded-lg shadow-2xl border-4 dark:bg-transparent dark:backdrop-blur-md border-green-400 mb-6 w-2xl mx-auto md:mb-0'>
+						<div id='image__container' className='flex'>
+							<div className='h-auto w-full  overflow-hidden object-fill relative'>
+								{/* <img
+									src='/iphone__comp__src/iphone-wallpaper.jpg'
+									alt='bg-img'
+									className='h-60 w-full object-cover'
+								/> */}
+
+								<BackgroundAnimation />
+								<div className='absolute inset-0 flex justify-center items-center'>
+									<Logo />
+									<h1 className='text-2xl font-black md:text-6xl lg:text-9xlt-'>
+										<span className='text-green-400'>{`<`}</span>CoderByNight
 										{' ' + ' '}
-										<span className='text-lime-500'>{`/>`}</span>
+										<span className='text-green-400'>{`/>`}</span>
 									</h1>
-									<p className='text-lg md:text-2xl px-10 md:px-20 font-normal'>
-										Hey there! My name is Debjit Majumdar and I founded a web
-										dev tutorial site Hulu 2.0 . Nowadays I'm in search of the
-										best ways to develop and design a business. Hope you enjoy
-										this course and my other one MakeReactApps.com.
-									</p>
 								</div>
 							</div>
 						</div>
@@ -42,14 +43,18 @@ function Hero() {
 			);
 		} else {
 			return (
-				<Image
-					src='/hero-image.png'
-					layout='responsive'
-					width={3306}
-					height={2074}
-					alt='Teaser Image'
-					// onClick={() => setTheme('dark')}
-				/>
+				<div
+					id='teaser__image'
+					className='relative rounded-lg shadow-2xl border-4 dark:bg-transparent dark:backdrop border-purple-400 mb-6 md:mb-0'>
+					<Image
+						src='/hero-image.png'
+						layout='responsive'
+						width={3306}
+						height={2074}
+						alt='Teaser Image'
+						// onClick={() => setTheme('dark')}
+					/>
+				</div>
 			);
 		}
 	};
@@ -90,7 +95,7 @@ function Hero() {
 		<>
 			<section id='hero' className='relative'>
 				{/* Purple Bar */}
-				<div className='absolute bg-purple-700 bottom-0 inset-x-0 h-64'></div>
+				<div className=' absolute bg-gradient-to-b from-purple-700 to-purple-700 dark:bg-gradient-to-b dark:from-transparent dark:via-green-900 dark:to-black bottom-0 inset-x-0 h-96'></div>
 				<div className='container mx-auto px-10 py-24 text-center'>
 					{/* Heading */}
 					<h1 className=' mb-4 text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-r from-teal-400 via-teal-500 to-purple-500 bg-clip-text'>
@@ -114,11 +119,13 @@ function Hero() {
 					</a>
 					{/* Teaser Image */}
 					<div className='relative'>
-						<div
-							id='teaser__image'
-							className='rounded-lg shadow-2xl border-4 dark:bg-gray-900 border-purple-400 mb-6 md:mb-0'>
-							{renderBGChanger()}
-						</div>
+						{renderBGChanger()}
+						{/* <h1 className='text-xs md:text-2xl'>
+										<span className='text-lime-500'>{`<`}</span>CoderByNight
+										{' ' + ' '}
+										<span className='text-lime-500'>{`/>`}</span>
+									</h1> */}
+
 						{/* Teaser Image Info Box */}
 						{renderBGCompChanger()}
 					</div>

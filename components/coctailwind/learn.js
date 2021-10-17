@@ -2,7 +2,7 @@ import Macbuttons from './learnstyles/macbuttons';
 
 function Learn() {
 	return (
-		<section>
+		<section id='learn'>
 			<div className='pt-12 pb-24 bg-gray-300 dark:bg-gray-900 text-gray-700 dark:text-gray-100'>
 				<div className='container mx-auto px-6 lg:px-0'>
 					<div className='relative'>

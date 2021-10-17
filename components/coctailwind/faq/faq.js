@@ -2,7 +2,9 @@ import Faqcomp from './faqcomp';
 
 function Faq() {
 	return (
-		<section className='bg-gray-800 dark:bg-gray-900 py-32 text-gray-400'>
+		<section
+			id='faq'
+			className='bg-gray-800 dark:bg-gray-900 py-32 text-gray-400'>
 			<div className='container mx-auto px-6 lg:px-0'>
 				<h2 className='mb-12 text-3xl text-center font-bold'>
 					Frequently Asked Questions

@@ -1,13 +1,16 @@
 import Image from 'next/image';
 
 function Iphone() {
-	return (
-		<div
+	/*
+<div
 			id='iphone'
-			className='py-10 px-10 min-h-screen bg-purple-50 dark:bg-gray-900 flex justify-center items-center '>
+			className='py-10 px-10 min-h-screen bg-gray-500 dark:bg-gray-900 flex justify-center items-center '>
+	*/
+	return (
+		<div id='iphone' className=' '>
 			{/* IOS phone */}
 
-			<div className='relative h-[712px] w-[350px] transform scale-100  bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-black'>
+			<div className='relative h-[712px] w-[350px] transform scale-100 bg-white dark:bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-gray-200 dark:border-black'>
 				{/* Image Background */}
 				<img
 					src='/iphone__comp__src/iphone-wallpaper.jpg'
@@ -22,7 +25,7 @@ function Iphone() {
 				{/* Both above Images works same */}
 				{/* Notch */}
 				<div className='absolute top-0 inset-x-0'>
-					<div className='h-6 w-40 mx-auto bg-black rounded-b-3xl'></div>
+					<div className='h-6 w-40 mx-auto bg-gray-200 dark:bg-black rounded-b-3xl'></div>
 				</div>
 				{/* Icons beside Notch sibling */}
 				<div className='relative'>

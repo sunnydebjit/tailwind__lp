@@ -1,7 +1,7 @@
 function Overview() {
 	return (
 		<>
-			<section className='relative bg-purple-700 md:pt-12 pb-24'>
+			<section className='relative bg-purple-700 dark:bg-black md:pt-12 pb-24'>
 				{/* Gray  Bar */}
 				<div className='absolute bg-gray-300 dark:bg-gray-900 bottom-0 inset-x-0 h-64'></div>
 				{/* Gray Bar ends */}
