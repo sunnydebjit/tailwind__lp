@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 		html: message.replace(/\r\n/g, '<br>'),
 	};
 
-	mail
+	await mail
 		.send(data)
 		.then(() => console.log('send mail success'))
 		.catch(console.log);
