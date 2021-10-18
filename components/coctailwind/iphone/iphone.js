@@ -12,16 +12,16 @@ function Iphone() {
 
 			<div className='relative h-[712px] w-[350px] transform scale-100 bg-white dark:bg-black rounded-[60px] shadow-xl overflow-hidden border-[14px] border-gray-200 dark:border-black'>
 				{/* Image Background */}
-				<img
+				{/* <img
 					src='/iphone__comp__src/iphone-wallpaper.jpg'
 					alt='bg image'
 					className='absolute inset-0 h-full w-full object-cover '
-				/>
-				{/* <Image
+				/> */}
+				<Image
 					src='/iphone__comp__src/iphone-wallpaper.jpg'
 					layout='fill'
 					className='absolute inset-0 h-full w-full object-cover '
-				/> */}
+				/>
 				{/* Both above Images works same */}
 				{/* Notch */}
 				<div className='absolute top-0 inset-x-0'>

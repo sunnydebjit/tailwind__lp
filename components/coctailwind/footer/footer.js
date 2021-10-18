@@ -2,8 +2,25 @@ import StyleElements from '../styleElements';
 import Linkcomp from './linkcomp';
 
 function Footer() {
+	async function handleOnSubmit(e) {
+		e.preventDefault();
+		const formData = {};
+		Array.from(e.currentTarget.elements).forEach((field) => {
+			if (!field.name) {
+				return;
+			}
+			formData[field.name] = field.value;
+		});
+		await fetch('api/mail', {
+			method: 'post',
+			body: JSON.stringify(formData),
+		});
+		console.log(formData);
+	}
 	return (
-		<footer className='overflow-hidden relative pt-24 bg-gradient-to-br dark:from-black from-white dark:to-gray-900 to-gray-300 text-gray-600 dark:text-gray-100'>
+		<footer
+			id='footer'
+			className='overflow-hidden relative pt-24 bg-gradient-to-br dark:from-black from-white dark:to-gray-900 to-gray-300 text-gray-600 dark:text-gray-100'>
 			<StyleElements>
 				{/* Blur ELement */}
 				{/* <div className=' dark:bg-gray-800 opacity-100 absolute top-0 inset-x-0 h-full blur-3xl'></div> */}
@@ -16,23 +33,42 @@ function Footer() {
 							<h4 className='mb-4 font-bold text-xl sm:text-2xl md:text-3xl  lg:text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-teal-400 to-purple-500'>
 								Let's start a conversation
 							</h4>
-							<form action='' method='post' className='flex'>
+							<form
+								method='post'
+								className='flex flex-col space-y-2'
+								onSubmit={handleOnSubmit}>
+								<input
+									type='text'
+									name='name'
+									id='name'
+									className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70  border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
+									placeholder='Enter Your Name'
+								/>
 								<input
 									type='email'
 									name='email'
 									id='email'
-									className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70 border-r-0 border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
-									placeholder='Send me an email'
+									className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70  border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
+									placeholder='Enter Your Email'
 								/>
-								<button
-									type='submit'
-									className='p-3 bg-purple-500 text-purple-100 rounded-r'>
-									Subscribe
-								</button>
+								<div className='flex'>
+									<input
+										type='text'
+										name='message'
+										id='message'
+										className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70 border-r-0 border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
+										placeholder='Send me a message'
+									/>
+									<button
+										type='submit'
+										className='p-3 bg-purple-500 text-purple-100 rounded-r'>
+										Connect
+									</button>
+								</div>
 							</form>
 						</div>
 						{/* Links */}
-						<div className='md:flex md:justify-center md:space-x-8 text-right space-y-8 md:space-y-0'>
+						<div className='md:flex md:justify-center md:items-center md:space-x-8 text-right space-y-8 md:space-y-0'>
 							{linkCompData.map(({ ...item }) => {
 								return <Linkcomp key={item.id} {...item} />;
 							})}
