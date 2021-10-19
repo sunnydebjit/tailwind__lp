@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import StyleElements from '../styleElements';
 import Linkcomp from './linkcomp';
 
 function Footer() {
+	const [fields, setFields] = useState('');
+
 	async function handleOnSubmit(e) {
 		e.preventDefault();
 		const formData = {};
@@ -41,6 +44,7 @@ function Footer() {
 									type='text'
 									name='name'
 									id='name'
+									required
 									className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70  border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
 									placeholder='Enter Your Name'
 								/>
@@ -48,6 +52,7 @@ function Footer() {
 									type='email'
 									name='email'
 									id='email'
+									required
 									className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70  border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
 									placeholder='Enter Your Email'
 								/>
@@ -56,6 +61,7 @@ function Footer() {
 										type='text'
 										name='message'
 										id='message'
+										required
 										className='flex-grow p-3 rounded-l outline-none border-2 fill-current opacity-40 focus:opacity-70 border-r-0 border-gray-400 focus:border-purple-500 placeholder-gray-500 dark:placeholder-gray-100'
 										placeholder='Send me a message'
 									/>

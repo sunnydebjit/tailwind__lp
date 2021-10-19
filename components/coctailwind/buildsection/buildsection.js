@@ -1,5 +1,23 @@
 import Cards from './cards';
 import { CodeIcon } from '@heroicons/react/solid';
+import { FaReact } from 'react-icons/fa';
+import { DiReact } from 'react-icons/di';
+import {
+	SiHtml5,
+	SiCss3,
+	SiJavascript,
+	SiReact,
+	SiTailwindcss,
+	SiNextdotjs,
+	SiFigma,
+	SiAdobeillustrator,
+	SiBlender,
+	SiAdobephotoshop,
+	SiAdobepremierepro,
+	SiAdobeaftereffects,
+} from 'react-icons/si';
+import { HiCode } from 'react-icons/hi';
+import { MdOutlineDesignServices } from 'react-icons/md';
 
 function Buildsection() {
 	return (
@@ -30,254 +48,98 @@ export default Buildsection;
 const buildData = [
 	{
 		id: '01',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiHtml5 className='w-8 h-8' />,
 		borderColor: 'border-red-500',
 		bgColor: 'bg-red-500',
-		name: 'Buttons',
+		name: 'Html 5',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '02',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiCss3 className='w-8 h-8' />,
 		borderColor: 'border-orange-500',
 		bgColor: 'bg-orange-500',
-		name: 'Cards',
+		name: 'Css 3',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '03',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiJavascript className='w-8 h-8' />,
 		borderColor: 'border-yellow-500',
 		bgColor: 'bg-yellow-500',
-		name: 'Forms',
+		name: 'Javascript',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '04',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiReact className='w-8 h-8' />,
 		borderColor: 'border-lime-500',
 		bgColor: 'bg-lime-500',
-		name: 'Header',
+		name: 'React',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '05',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiTailwindcss className='w-8 h-8' />,
 		borderColor: 'border-green-500',
 		bgColor: 'bg-green-500',
-		name: 'Navigation',
+		name: 'Tailwind',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '06',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiNextdotjs className='w-8 h-8' />,
 		borderColor: 'border-emerald-500',
 		bgColor: 'bg-emerald-500',
-		name: 'Hero',
+		name: 'Next JS Fullstack',
+		category: <HiCode className='h-full w-auto' />,
 	},
 	{
 		id: '07',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiFigma className='w-8 h-8' />,
 		borderColor: 'border-cyan-500',
 		bgColor: 'bg-cyan-500',
-		name: 'Grids',
+		name: 'Figma',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 	{
 		id: '08',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiBlender className='w-8 h-8' />,
 		borderColor: 'border-sky-500',
 		bgColor: 'bg-sky-500',
-		name: 'NewsLetter',
+		name: 'Blender',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 	{
 		id: '09',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiAdobeillustrator className='w-8 h-8' />,
 		borderColor: 'border-blue-500',
 		bgColor: 'bg-blue-500',
-		name: 'Pricing',
+		name: 'Illustrator',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 	{
 		id: '10',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiAdobephotoshop className='w-8 h-8' />,
 		borderColor: 'border-indigo-500',
 		bgColor: 'bg-indigo-500',
-		name: 'FAQ',
+		name: 'Photoshop',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 	{
 		id: '11',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiAdobepremierepro className='w-8 h-8' />,
 		borderColor: 'border-violet-500',
 		bgColor: 'bg-violet-500',
-		name: 'ParcelJs',
+		name: 'Premier Pro',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 	{
 		id: '12',
-		icon: (
-			<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='h-6 w-6'
-				fill='none'
-				viewBox='0 0 24 24'
-				stroke='currentColor'>
-				<path
-					strokeLinecap='round'
-					strokeLinejoin='round'
-					strokeWidth={2}
-					d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
-				/>
-			</svg>
-		),
+		icon: <SiAdobeaftereffects className='w-8 h-8' />,
 		borderColor: 'border-rose-500',
 		bgColor: 'bg-rose-500',
-		name: 'Responsive',
+		name: 'After Effects',
+		category: <MdOutlineDesignServices className='h-full w-auto' />,
 	},
 ];
