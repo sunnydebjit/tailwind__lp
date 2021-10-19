@@ -5,6 +5,12 @@ import Linkcomp from './linkcomp';
 function Footer() {
 	const [fields, setFields] = useState('');
 
+	const fetchStatus = async () => {
+		const statusResponse = await fetch('/api/test');
+		const data = await statusResponse.json();
+		console.log(data);
+	};
+
 	async function handleOnSubmit(e) {
 		e.preventDefault();
 		const formData = {};
@@ -17,8 +23,11 @@ function Footer() {
 		await fetch('api/mail', {
 			method: 'post',
 			body: JSON.stringify(formData),
-		});
-		console.log(formData);
+		})
+			.then(() => {
+				fetchStatus();
+			})
+			.catch((err) => console.log(err));
 	}
 	return (
 		<footer

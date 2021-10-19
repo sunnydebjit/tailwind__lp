@@ -13,16 +13,36 @@ export default async function handler(req, res) {
 
 	const data = {
 		to: 'sunnydebjit@gmail.com',
-		from: 'hello@debjitmajumdar.com',
+		from: 'hello@debjitmajumdar.om',
 		subject: 'New web form message',
 		text: message,
 		html: message.replace(/\r\n/g, '<br>'),
 	};
+	let humpty = '';
 
 	await mail
 		.send(data)
-		.then(() => console.log('send mail success'))
-		.catch(console.log);
+		.then((e) => {
+			console.log(`Message sent: ${e}`);
+			humpty = String(e);
+		})
+		.catch((err) => {
+			console.log(`Error: ${err}`);
+			humpty = String(err);
+		});
+	if (humpty && humpty.includes('202')) {
+		console.log('message success 202 yay humpty');
+	} else if (humpty && humpty.includes('403')) {
+		console.log('message failed on client side -- 403 error');
+		dumpty += 'message failed on client side -- 403 error';
+	}
 
 	res.status(200).json({ status: 'ok' });
+
+	// const passMessage = await mail.send(data);
+
+	// console.log('Message is sent: ' + passMessage);
+	// res.status(200).json({ status: 'ok' });
 }
+
+export let dumpty = '';
