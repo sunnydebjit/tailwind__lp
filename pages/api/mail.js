@@ -1,6 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const mail = require('@sendgrid/mail');
-
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
@@ -13,36 +12,20 @@ export default async function handler(req, res) {
 
 	const data = {
 		to: 'sunnydebjit@gmail.com',
-		from: 'hello@debjitmajumdar.om',
+		from: 'hello@debjitmajumdar.com',
 		subject: 'New web form message',
 		text: message,
 		html: message.replace(/\r\n/g, '<br>'),
 	};
-	let humpty = '';
 
 	await mail
 		.send(data)
 		.then((e) => {
 			console.log(`Message sent: ${e}`);
-			humpty = String(e);
+			res.status(202).json({ status: 'ok' });
 		})
 		.catch((err) => {
 			console.log(`Error: ${err}`);
-			humpty = String(err);
+			res.status(403).json({ status: 'failed' });
 		});
-	if (humpty && humpty.includes('202')) {
-		console.log('message success 202 yay humpty');
-	} else if (humpty && humpty.includes('403')) {
-		console.log('message failed on client side -- 403 error');
-		dumpty += 'message failed on client side -- 403 error';
-	}
-
-	res.status(200).json({ status: 'ok' });
-
-	// const passMessage = await mail.send(data);
-
-	// console.log('Message is sent: ' + passMessage);
-	// res.status(200).json({ status: 'ok' });
 }
-
-export let dumpty = '';

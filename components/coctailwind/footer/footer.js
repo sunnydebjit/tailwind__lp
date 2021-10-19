@@ -3,14 +3,6 @@ import StyleElements from '../styleElements';
 import Linkcomp from './linkcomp';
 
 function Footer() {
-	const [fields, setFields] = useState('');
-
-	const fetchStatus = async () => {
-		const statusResponse = await fetch('/api/test');
-		const data = await statusResponse.json();
-		console.log(data);
-	};
-
 	async function handleOnSubmit(e) {
 		e.preventDefault();
 		const formData = {};
@@ -24,8 +16,17 @@ function Footer() {
 			method: 'post',
 			body: JSON.stringify(formData),
 		})
-			.then(() => {
-				fetchStatus();
+			.then((res) => {
+				console.log(res);
+				if (res.status == 202) {
+					console.log(
+						`Success, Code: ${res.status} Status Message: ${res.statusText}`
+					);
+				} else {
+					console.log(
+						`Error, Code ${res.status} Status Message: ${res.statusText}`
+					);
+				}
 			})
 			.catch((err) => console.log(err));
 	}
