@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Tailwind Landing Page</title>
+				<title>Debjit Majumdar &middot; Freelance Developer</title>
 				<meta name='description' content='copyright Debjit Majumdar' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta name='keywords' content='tailwind landing page' />

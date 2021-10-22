@@ -2,6 +2,14 @@ function Scrollable({ linkName, src, visibility }) {
 	return (
 		<>
 			<a
+				initial={{
+					y: '-10vh',
+					opacity: 0,
+				}}
+				animate={{
+					y: 0,
+					opacity: 1,
+				}}
 				href={src}
 				className={`${
 					visibility || ''

@@ -9,15 +9,16 @@ function Aboutme() {
 						My Past Projects
 					</h2>
 					<p className='mb-12 md:text-xl leading-loose'>
-						Hey there! My name is{' '}
+						Hi! My name{' '}
 						<a href='#' className='text-blue-500 hover:underline'>
 							Debjit Majumdar
 						</a>{' '}
-						and I founded a web dev tutorial site Scotch.io. We were able to
-						grow to 4M monthly pageviews and $300,000 yearly revenue. Scotch.io
-						was acquired byDigitalOcean in November 2019. Nowadays I'm in search
-						of the best ways to develop and design a business. Hope you enjoy
-						this course and my other one MakeReactApps.com.
+						and I’m a UI & UX Designer who lives in Bangalore, India. I
+						graduated from Dr. B.C Roy College of Engineering. Where I did the
+						Communication and Multimedia Design study. With my portfolio, I
+						would like to show you projects I’m proud of and show my diversity
+						of creativity, with User Interface / Experience design and
+						UI-Animation appealing to me the most.
 					</p>
 					{/* Videos */}
 					<div className='md:flex md:space-x-8 space-y-8 md:space-y-0 text-left'>

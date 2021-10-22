@@ -4,7 +4,7 @@ function Learn() {
 	return (
 		<section id='learn'>
 			<div className='pt-12 pb-24 bg-gray-300 dark:bg-gray-900 text-gray-700 dark:text-gray-100'>
-				<div className='container mx-auto px-6 lg:px-0'>
+				<div className='container mx-auto px-10'>
 					<div className='relative'>
 						{/* header */}
 						<h2 className='mb-16 text-center font-bold text-purple-900 text-6xl'>

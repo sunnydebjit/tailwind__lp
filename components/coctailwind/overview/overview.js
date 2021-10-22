@@ -1,24 +1,39 @@
+import OverCircles from './overCircles';
+
 function Overview() {
 	return (
 		<>
-			<section className='relative bg-purple-700 dark:bg-black md:pt-12 pb-24'>
+			<section
+				id='overview'
+				className='relative bg-purple-700 dark:bg-gradient-to-b from-black via-black to-black md:pt-12 pb-24'>
 				{/* Gray  Bar */}
-				<div className='absolute bg-gray-300 dark:bg-gray-900 bottom-0 inset-x-0 h-64'></div>
+				<div className='absolute bg-gray-300 dark:bg-gray-900 bottom-0 inset-x-0 h-64 '></div>
 				{/* Gray Bar ends */}
+				{/* Experiment */}
+				<div className='absolute inset-0 flex flex-col justify-around space-y-6'>
+					<OverCircles />
+					<OverCircles />
+				</div>
+				{/* Exp ends */}
 				<div className=' relative container mx-auto px-10'>
-					<h2 className='mb-10 text-4xl md:text-6xl font-bold text-purple-100'>
-						Writing CSS is tough stuff!
+					<h2 className='mb-10 text-4xl md:text-6xl font-bold text-center md:text-left'>
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-400'>
+							Overview
+						</span>{' '}
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>
+							About
+						</span>{' '}
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500  to-teal-600 '>
+							Me
+						</span>
 					</h2>
 					<div
 						id='left'
 						className='md:flex md:space-x-16 space-y-6 lg:space-y-0'>
-						<div className='md:w-2/3 bg-purple-50 p-12 md:p-16 rounded shadow-2xl text-purple-800 text-base md:text-lg space-y-8 leading-relaxed'>
+						<div className='md:w-2/3 bg-purple-50 dark:bg-white/10 backdrop-blur-3xl p-12 md:p-16 rounded shadow-2xl text-purple-800 dark:text-green-50 text-base md:text-lg space-y-8 leading-relaxed'>
 							<p>
 								Tailwind makes writing CSS easier and lets us customize our
-								designs faster than any other CSS framework. If you want a CSS
-								framework that has pre-built components, then Tailwind may not
-								be for you. If you want a CSS framework that lets you design
-								quickly and customize your site, then{' '}
+								designs faster than any other CSS framework.{' '}
 								<strong className='font-bold text-teal-500'>
 									Tailwind is gonna be a lot of fun
 								</strong>
@@ -47,10 +62,7 @@ function Overview() {
 							<p>
 								<strong className='font-bold'>Important Note</strong>: Tailwind
 								lets us design quickly, but this doesn't mean that you don't
-								need CSS knowledge however. To use Tailwind, you need to have a
-								good understanding of CSS properties. In this course, we will
-								learn Tailwind and we'll also learn CSS conceptsto create good
-								looking designs.{' '}
+								need CSS knowledge however. .{' '}
 								<strong className='font-bold'>
 									Tailwind is the ultimate CSS shorthand
 								</strong>
@@ -66,26 +78,24 @@ function Overview() {
 							</p>
 							<p>
 								The hardest things about learning Tailwind is memorizing the
-								classes and also knowing which classes go well together. We'll
-								be writing a lot of Tailwind in this course so that the
-								repetition will help us commit Tailwind classes to memory.
+								classes
 							</p>
 						</div>
 						<div id='right' className=' flex-grow text-lg italic space-y-6'>
-							<p className=' p-10 rounded-lg bg-purple-800 text-purple-200 shadow-lg'>
-								What classes should I use?
+							<p className=' p-10 rounded-lg bg-purple-800 dark:bg-green-900/10 backdrop-blur-3xl text-purple-200 shadow-lg'>
+								2014: Started own design studio REVCO
 							</p>
-							<p className=' p-10 rounded-lg bg-purple-800 text-purple-200 shadow-lg'>
-								How do I make things look good?
+							<p className=' p-10 rounded-lg bg-purple-800 dark:bg-green-900/10 backdrop-blur-3xl text-purple-200 shadow-lg'>
+								2016: Started own design studio REVCO
 							</p>
-							<p className=' p-10 rounded-lg bg-purple-800 text-purple-200 shadow-lg'>
-								My design looks basic?
+							<p className=' p-10 rounded-lg bg-purple-800 dark:bg-green-900/10 backdrop-blur-3xl  text-purple-200 shadow-lg'>
+								2018: Started own design studio REVCO
 							</p>
-							<p className=' p-10 rounded-lg bg-purple-800 text-purple-200 shadow-lg'>
-								How do I do responsive?
+							<p className=' p-10 rounded-lg bg-purple-800 dark:bg-green-900/10 backdrop-blur-3xl text-purple-200 shadow-lg'>
+								2019: Started own design studio REVCO
 							</p>
-							<p className=' p-10 rounded-lg bg-purple-800 text-purple-200 shadow-lg'>
-								Why does my typography look so bad?
+							<p className=' p-10 rounded-lg bg-purple-800 dark:bg-green-900/10 backdrop-blur-3xl text-purple-200 shadow-lg'>
+								2020: Started freelancing
 							</p>
 						</div>
 					</div>

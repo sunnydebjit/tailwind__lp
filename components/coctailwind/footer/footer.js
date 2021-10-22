@@ -1,8 +1,33 @@
 import React, { useState } from 'react';
 import StyleElements from '../styleElements';
 import Linkcomp from './linkcomp';
+//Toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function Footer() {
+	const notifySuccess = () =>
+		toast.success('📧 Message Sent!', {
+			theme: 'dark',
+			position: 'top-right',
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
+	const notifyError = () =>
+		toast.error('Sorry, your message was not sent', {
+			theme: 'dark',
+			position: 'top-right',
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+		});
 	async function handleOnSubmit(e) {
 		e.preventDefault();
 		const formData = {};
@@ -12,6 +37,23 @@ function Footer() {
 			}
 			formData[field.name] = field.value;
 		});
+
+		// const sendToAPI = await fetch('api/mail', {
+		// 	method: 'post',
+		// 	body: JSON.stringify(formData),
+		// });
+
+		// const response = await toast.promise(
+		// 	fetch('api/mail', {
+		// 		method: 'post',
+		// 		body: JSON.stringify(formData),
+		// 	}),
+		// 	{
+		// 		pending: 'Sending message',
+		// 		success: 'Message is sent 👌',
+		// 		error: 'Please try again 🤯',
+		// 	}
+		// );
 		await fetch('api/mail', {
 			method: 'post',
 			body: JSON.stringify(formData),
@@ -19,10 +61,12 @@ function Footer() {
 			.then((res) => {
 				console.log(res);
 				if (res.status == 202) {
+					notifySuccess();
 					console.log(
 						`Success, Code: ${res.status} Status Message: ${res.statusText}`
 					);
 				} else {
+					notifyError();
 					console.log(
 						`Error, Code ${res.status} Status Message: ${res.statusText}`
 					);
@@ -35,6 +79,17 @@ function Footer() {
 			id='footer'
 			className='overflow-hidden relative pt-24 bg-gradient-to-br dark:from-black from-white dark:to-gray-900 to-gray-300 text-gray-600 dark:text-gray-100'>
 			<StyleElements>
+				<ToastContainer
+					position='top-right'
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+				/>
 				{/* Blur ELement */}
 				{/* <div className=' dark:bg-gray-800 opacity-100 absolute top-0 inset-x-0 h-full blur-3xl'></div> */}
 				{/* Blur Ends */}
@@ -122,11 +177,11 @@ const linkCompData = [
 		section: 'Company',
 		links: ['About', 'Blog', 'Career'],
 	},
-	{
-		id: 1,
-		section: 'Product',
-		links: ['Pricing', 'Documentation', 'Guides'],
-	},
+	// {
+	// 	id: 1,
+	// 	section: 'Product',
+	// 	links: ['Pricing', 'Documentation', 'Guides'],
+	// },
 	{
 		id: 2,
 		section: 'Legal',

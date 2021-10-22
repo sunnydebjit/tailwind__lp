@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { motion } from 'framer-motion';
 import Darkbutton from './darkbutton';
 import Hamburgernav from './hamburgernav';
 import Logo from './logo';
@@ -30,7 +30,7 @@ function Header() {
 			<nav
 				className={`sticky z-50 top-0 ${
 					navColor
-						? 'bg-gradient-to-b from-gray-50 to-transparent dark:bg-gradient-to-b dark:from-black  dark:to-transparent '
+						? 'bg-gradient-to-b  from-white via-white to-transparent dark:bg-gradient-to-b dark:from-black  dark:to-transparent '
 						: null
 				}`}>
 				<section className='text-gray-600 dark:text-gray-300'>
@@ -41,9 +41,9 @@ function Header() {
 								className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-110 transition duration-200 '
 							/>
 							<Scrollable
-								linkName='Tailwind Master'
-								src='#hero'
-								visibility={'hidden'}
+								linkName='Debjit'
+								src='#overview'
+								visibility={'hidden font-black uppercase text-xl'}
 							/>
 							<Scrollable linkName='About' src='#about' visibility={'hidden'} />
 							<Scrollable

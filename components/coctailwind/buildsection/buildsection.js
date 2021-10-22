@@ -22,7 +22,7 @@ import { MdOutlineDesignServices } from 'react-icons/md';
 function Buildsection() {
 	return (
 		<section className='pt-0 pb-24 bg-gray-300 dark:bg-gray-900'>
-			<div className='container mx-auto px-6 md:px-0 space-y-5 md:space-y-0'>
+			<div className='container mx-auto px-10 space-y-5 md:space-y-0'>
 				<div className='mb-14 text-center '>
 					<h2 className='mb-4 text-5xl md:text-6xl text-gray-800 dark:text-gray-50 font-semibold'>
 						Technologies at work
@@ -91,7 +91,7 @@ const buildData = [
 		icon: <SiNextdotjs className='w-8 h-8' />,
 		borderColor: 'border-emerald-500',
 		bgColor: 'bg-emerald-500',
-		name: 'Next JS Fullstack',
+		name: 'Next JS',
 		category: <HiCode className='h-full w-auto' />,
 	},
 	{

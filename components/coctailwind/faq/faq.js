@@ -5,7 +5,7 @@ function Faq() {
 		<section
 			id='faq'
 			className='bg-gray-800 dark:bg-gray-900 py-32 text-gray-400'>
-			<div className='container mx-auto px-6 lg:px-0'>
+			<div className='container mx-auto px-10'>
 				<h2 className='mb-12 text-3xl text-center font-bold'>
 					Frequently Asked Questions
 				</h2>

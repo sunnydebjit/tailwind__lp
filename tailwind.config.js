@@ -22,8 +22,15 @@ module.exports = {
 			animation: {
 				blob: 'grow 7s infinite',
 				tilt: 'tilt 10s infinite',
+				shoosh: 'sweep 5s infinite',
 			},
 			keyframes: {
+				sweep: {
+					'0%': {
+						transform: 'translate(-100vw)',
+					},
+					'100%': { transform: 'translate(100vw)' },
+				},
 				tilt: {
 					'0%, 50%, 100%': {
 						transform: 'rotate(0deg)',

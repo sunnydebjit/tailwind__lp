@@ -69,7 +69,7 @@ function Hero() {
 		if (currentTheme === 'dark') {
 			return (
 				<>
-					<div className='md:absolute top-0 right-0 bg-yellow-100 md:transform md:translate-x-4 md:-translate-y-4 lg:translate-x-0 md:mr-6 lg:mr-56 text-center text-xs md:text-normal md:text-left py-2 px-4 md:py-4 md:px-8 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500'>
+					<div className='md:absolute top-0 right-0 bg-yellow-100 md:transform md:translate-x-4 lg:transform xl:-translate-x-44 md:-translate-y-4 text-center text-xs md:text-normal md:text-left py-2 px-4 md:py-4 md:px-8 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500'>
 						<p>
 							<strong className='font-bold'>We'll create Debjit</strong>{' '}
 							<span className='opacity-60'>(it's the site you're on now)</span>
@@ -100,7 +100,7 @@ function Hero() {
 		if (!mounted) return <></>;
 		if (currentTheme === 'dark') {
 			return (
-				<div className='mb-16 md:mb-32 py-3 px-12'>
+				<div className='mb-16 md:mb-32'>
 					<GlowButtonFormat
 						gdcolor1={'from-green-600'}
 						gdcolor2={'to-teal-600'}
@@ -110,9 +110,9 @@ function Hero() {
 		} else {
 			return (
 				<a
-					href='#'
+					href='#footer'
 					className='inline-block mb-16 md:mb-32 py-3 px-12 rounded shadow-lg hover:shadow-2xl bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 text-purple-100 hover:text-white font-bold text-lg tracking-wide transition duration-500'>
-					Reach out to me
+					Let's Talk
 				</a>
 			);
 		}
@@ -125,18 +125,21 @@ function Hero() {
 				<div className=' absolute bg-gradient-to-b from-purple-700 to-purple-700 dark:bg-gradient-to-b dark:from-transparent dark:via-green-900 dark:to-black bottom-0 inset-x-0 h-96'></div>
 				<div className='container mx-auto px-10 py-24 text-center'>
 					{/* Heading */}
-					<h1 className=' mb-4 text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-r from-teal-400 via-teal-500 to-purple-500 bg-clip-text'>
-						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>
-							Tailwind
+					<h1 className=' mb-4 text-5xl md:text-6xl font-extrabold '>
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-400'>
+							Creating
 						</span>{' '}
-						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-teal-600 to-purple-500 '>
-							Master
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>
+							Digital
+						</span>{' '}
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500  to-teal-600 '>
+							Experiences
 						</span>
 					</h1>
 					{/* Paragraph */}
-					<p className='mb-8 text-lg md:text-2xl text-gray-700 dark:text-gray-100'>
-						Make good looking designs quickly. All without a single line of
-						custom CSS.
+					<p className='mb-12 lg:px-56 text-lg md:text-2xl text-gray-700 dark:text-gray-100'>
+						If you’re looking for a freelance developer to help bring an idea to
+						life and you’re on a tight timeline—let’s jam.
 					</p>
 					{/* Big Button */}
 					{BigButton()}
