@@ -10,7 +10,7 @@ function Overview() {
 				<div className='absolute bg-gray-300 dark:bg-gray-900 bottom-0 inset-x-0 h-64 '></div>
 				{/* Gray Bar ends */}
 				{/* Experiment */}
-				<div className='absolute inset-0 flex flex-col justify-around space-y-6'>
+				<div className='absolute inset-0 flex flex-col justify-center space-y-6 overflow-x-hidden'>
 					<OverCircles />
 					<OverCircles />
 				</div>

@@ -1,4 +1,4 @@
-import Aboutme from './aboutme';
+import Projects from './Projects';
 import Buildsection from './buildsection/buildsection';
 import Faq from './faq/faq';
 import Hero from './hero/hero';
@@ -11,8 +11,8 @@ function Main() {
 	return (
 		<>
 			<Hero />
+			<Projects />
 			<Overview />
-			<Aboutme />
 			<Learn />
 			<Buildsection />
 			<Pricing />

@@ -17,7 +17,7 @@ function GlowButtonFormat({ gdcolor1, gdcolor2 }) {
 							<path d='M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z' />
 						</svg> */}
 
-						<span className='text-gray-100 leading-none font-bold text-lg md:text-lg'>
+						<span className='text-gray-100  font-bold text-lg md:text-lg'>
 							Let's Talk
 						</span>
 						{/* <span className='leading-none text-xs text-green-400 group-hover:text-gray-100 transition duration-200'>

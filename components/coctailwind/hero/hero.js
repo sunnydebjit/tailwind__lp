@@ -71,10 +71,14 @@ function Hero() {
 				<>
 					<div className='md:absolute top-0 right-0 bg-yellow-100 md:transform md:translate-x-4 lg:transform xl:-translate-x-44 md:-translate-y-4 text-center text-xs md:text-normal md:text-left py-2 px-4 md:py-4 md:px-8 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500'>
 						<p>
-							<strong className='font-bold'>We'll create Debjit</strong>{' '}
-							<span className='opacity-60'>(it's the site you're on now)</span>
+							View this site's code on
+							<strong className='font-bold'>
+								{' '}
+								<a href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
+									Github
+								</a>
+							</strong>{' '}
 						</p>
-						<p>We'll do it all without a single line of custom CSS!</p>
 					</div>
 				</>
 			);
@@ -83,12 +87,14 @@ function Hero() {
 				<>
 					<div className='md:absolute top-0 right-0 bg-yellow-100 md:transform md:translate-x-4 md:-translate-y-4 text-center text-xs md:text-normal md:text-left py-2 px-4 md:py-4 md:px-8 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500'>
 						<p>
+							View this site's code on
 							<strong className='font-bold'>
-								We'll create TailwindMaster.com
+								{' '}
+								<a href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
+									Github
+								</a>
 							</strong>{' '}
-							<span className='opacity-60'>(it's the site you're on now)</span>
 						</p>
-						<p>We'll do it all without a single line of custom CSS!</p>
 					</div>
 				</>
 			);

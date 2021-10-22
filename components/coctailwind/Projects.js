@@ -1,13 +1,21 @@
-function Aboutme() {
+function Projects() {
 	return (
 		<>
 			<section
 				id='about'
-				className='md:pt-12 pb-24 bg-gray-300 dark:bg-gray-900 md:text-center'>
+				className='md:pt-12 pb-24 bg-gray-300 dark:bg-black md:text-center'>
 				<section className='container mx-auto px-10'>
-					<h2 className='mb-3 text-4xl md:text-6xl font-bold text-teal-900 dark:text-teal-300'>
-						My Past Projects
-					</h2>
+					<h1 className=' mb-8 text-5xl md:text-6xl font-extrabold '>
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-400'>
+							Things
+						</span>{' '}
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500'>
+							I've
+						</span>{' '}
+						<span className='text-transparent bg-clip-text bg-gradient-to-r from-teal-500  to-teal-600 '>
+							Worked
+						</span>
+					</h1>
 					<p className='mb-12 md:text-xl leading-loose'>
 						Hi! My name{' '}
 						<a href='#' className='text-blue-500 hover:underline'>
@@ -22,7 +30,7 @@ function Aboutme() {
 					</p>
 					{/* Videos */}
 					<div className='md:flex md:space-x-8 space-y-8 md:space-y-0 text-left'>
-						<div className='bg-gray-50 dark:bg-gray-900 md:w-1/2 border-2 border-gray-700 rounded shadow-xl'>
+						<div className='bg-gray-50 dark:bg-transparent md:w-1/2 border-2 border-gray-700 rounded shadow-xl'>
 							<p className='text-lg text-gray-700 dark:text-white p-4'>
 								I have a Getting Started with Tailwind article on scotch.io and
 								a 15 minute starter YouTube video.
@@ -36,7 +44,7 @@ function Aboutme() {
 								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 								allowFullScreen></iframe>
 						</div>
-						<div className='bg-gray-50 dark:bg-gray-900 md:w-1/2 border-2 border-gray-700 rounded shadow-xl '>
+						<div className='bg-gray-50 dark:bg-transparent md:w-1/2 border-2 border-gray-700 rounded shadow-xl '>
 							<p className='text-lg text-gray-700 dark:text-white p-4'>
 								I did a Build Your 1st Tailwind Site for Traversy Media on
 								YouTube also.
@@ -57,4 +65,4 @@ function Aboutme() {
 	);
 }
 
-export default Aboutme;
+export default Projects;

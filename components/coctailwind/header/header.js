@@ -30,7 +30,7 @@ function Header() {
 			<nav
 				className={`sticky z-50 top-0 ${
 					navColor
-						? 'bg-gradient-to-b  from-white via-white to-transparent dark:bg-gradient-to-b dark:from-black  dark:to-transparent '
+						? 'bg-gradient-to-b  from-white via-white to-transparent dark:bg-gradient-to-b dark:from-black dark:via-black  dark:to-transparent '
 						: null
 				}`}>
 				<section className='text-gray-600 dark:text-gray-300'>
