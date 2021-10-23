@@ -51,7 +51,7 @@ function Hero() {
 					id='teaser__image'
 					className='relative rounded-lg shadow-2xl border-4 dark:bg-transparent dark:backdrop border-purple-400 mb-6 md:mb-0'>
 					<Image
-						src='/hero.png'
+						src='/heropic.png'
 						layout='responsive'
 						width={3306}
 						height={2074}
