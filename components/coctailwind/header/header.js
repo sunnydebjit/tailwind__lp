@@ -40,12 +40,41 @@ function Header() {
 								height={30}
 								className='text-teal-900 dark:text-teal-50 cursor-pointer transform hover:scale-110 transition duration-200 '
 							/>
-							<Scrollable
-								linkName='Debjit'
-								src='#overview'
-								visibility={'hidden font-black uppercase text-xl'}
+							<Link href='/'>
+								<a
+									className={`lg:inline-block hover:text-gray-900 dark:hover:text-gray-50 font-black uppercase text-xl`}>
+									Debjit
+								</a>
+							</Link>
+							<Link href='/#projects'>
+								<a
+									className={`hidden lg:inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+									Projects
+								</a>
+							</Link>
+							<Link href='/#overview'>
+								<a
+									className={`hidden lg:inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+									Overview
+								</a>
+							</Link>
+							<Link href='/#tech'>
+								<a
+									className={`hidden lg:inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+									Technologies
+								</a>
+							</Link>
+							<Link href='/#faqs'>
+								<a
+									className={`hidden lg:inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+									FAQ
+								</a>
+							</Link>
+							{/* <Scrollable
+								linkName='Projects'
+								src='#projects'
+								visibility={'hidden'}
 							/>
-							<Scrollable linkName='About' src='#about' visibility={'hidden'} />
 							<Scrollable
 								linkName={`What You'll Learn`}
 								src='#learn'
@@ -56,7 +85,7 @@ function Header() {
 								src='#pricing'
 								visibility={'hidden'}
 							/>
-							<Scrollable linkName='FAQ' src='#faq' visibility={'hidden'} />
+							<Scrollable linkName='FAQ' src='#faq' visibility={'hidden'} /> */}
 
 							{/* <Link href='/'>
 								<a className='text-teal-900 dark:text-teal-50 font-bold text-2xl'>
@@ -94,16 +123,18 @@ function Header() {
 
 							{navColor ? <Scrolltotop /> : null}
 
-							<Link href='/coctailwind/login'>
+							{/* <Link href='/coctailwind/login'>
 								<a className='hover:text-gray-900 dark:hover:text-gray-50 hidden lg:inline-block'>
 									Login
 								</a>
-							</Link>
-							<Link href='/coctailwind/userpage'>
-								<a className='hidden lg:inline-block p-3 bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 hover:bg-purple-200 text-purple-100 hover:text-white rounded shadow hover:shadow-xl transition duration-500'>
-									Signup
-								</a>
-							</Link>
+							</Link> */}
+
+							<a
+								href='/resume_debjit_majumdar_r2k21.pdf'
+								download
+								className='hidden lg:inline-block p-3 bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 hover:bg-purple-200 text-purple-100 hover:text-white rounded shadow hover:shadow-xl transition duration-500'>
+								Resume
+							</a>
 						</div>
 					</div>
 				</section>

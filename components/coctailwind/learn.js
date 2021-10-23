@@ -2,13 +2,13 @@ import Macbuttons from './learnstyles/macbuttons';
 
 function Learn() {
 	return (
-		<section id='learn'>
-			<div className='pt-12 pb-24 bg-gray-300 dark:bg-gray-900 text-gray-700 dark:text-gray-100'>
+		<section id='faqs'>
+			<div className='pt-12 pb-12 bg-gray-50 dark:bg-black text-gray-700 dark:text-gray-100'>
 				<div className='container mx-auto px-10'>
 					<div className='relative'>
 						{/* header */}
-						<h2 className='mb-16 text-center font-bold text-purple-900 text-6xl'>
-							What you'll learn in this course
+						<h2 className='mb-16 text-center font-bold text-gray-900 dark:text-gray-50 text-6xl'>
+							Frequently Asked Questions
 						</h2>
 						{/* Header Style elements */}
 						<div className='absolute top-0 left-0 transform -translate-y-4 h-2 w-1/3 rounded bg-gradient-to-tr from-blue-400 to-purple-400'></div>
@@ -19,67 +19,59 @@ function Learn() {
 						{/* Row 1 */}
 						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
 							<Macbuttons>
-								<h3>How to use Tailwind Classes</h3>
+								<h3>Why have you been so diverse?</h3>
 							</Macbuttons>
 							<p className='p-4 '>
-								We'll dive into the most important Tailwind classes and use them
-								a TON. There are a lot of useful classes like spacing,
-								backgrounds, borders, shadows, and typography. We'll type the
-								Tailwind classes many times over to ensure that repeitition is
-								our greatest learning tool.
+								I beleive myself to be a problem solver. Over the years, I've
+								met several good people & understood no two problems are alike,
+								and if you wish to solve them, you need to spread your wings.
 							</p>
 						</div>
 						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
 							<Macbuttons>
-								<h3>Make good looking designs</h3>
+								<h3>How did you know these technologies?</h3>
 							</Macbuttons>
 							<p className='p-4 '>
-								There's a certain process to designing with Tailwind that we'll
-								take to make our designs look good. Some easy to remember rules
-								are all it takes to get a good design. We'll also talk about
-								ideas and action items to take a good design and make it great.
+								I am constantly evolving and staying updated with latest
+								technologies. I have never stopped learning after my graduation,
+								infact, I study a lot more after that since I am not confined to
+								a curriculum.
 							</p>
 						</div>
 						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
 							<Macbuttons>
-								<h3>Why Tailwind is different/better</h3>
+								<h3>Why did you learn Development after Design?</h3>
 							</Macbuttons>
 							<p className='p-4 '>
-								To be completely honest, I didn't like Tailwind at first. It
-								felt like inline styles to me (and maybe still does). After
-								using it more and more though, I've come to absolutely love it.
-								I dread jumping into a project without Tailwind now.
+								A good design is useless if it isn't implemented somewhere. I
+								prefer putting the effort and learning the tech rather than
+								relying on someone else to implement my creatives.
 							</p>
 						</div>
 						{/* Row 2 */}
 						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-3 shadow-lg'>
 							<Macbuttons>
-								<h3>How to build this site (site-ception!)</h3>
+								<h3>Can you work on a team?</h3>
 							</Macbuttons>
 							<p className='p-4 '>
-								The site you're on (BeginnerTailwind.com) is built with Tailwind
-								and has 0 custom css.
-							</p>
-							<p className='p-4 '>
-								You can take all of the code from this site and use it for your
-								own landing pages or sites! All the code is available to you
-								with course purchase.
+								Absolutely, I subscribe to the feeling revolution can be
+								achieved in a group of people. I am a teamplayer and can focus
+								on precision when rest of the work is distributed.
 							</p>
 						</div>
 						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-3 shadow-lg'>
 							<Macbuttons>
-								<h3>A fun and methodical design process</h3>
+								<h3>Are you available for work?</h3>
 							</Macbuttons>
 							<p className='p-4 '>
-								I struggle with making things look good and don't consider
-								myself a designer. What I try to do is have a formula for making
-								things look good. I focus on design in this order: spacing, box
-								properties, typography, fun element to pop. We'll talk about
-								this all throughout the course.
+								Yes I am available for work and collaboration on complex
+								projects involving multi layer components stacked together to
+								make a piece. If you have such work at hand, I would love to
+								have a conversation with you.
 							</p>
 						</div>
 						{/* Row 3 */}
-						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
+						{/* <div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
 							<Macbuttons>
 								<h3>Creating common components</h3>
 							</Macbuttons>
@@ -123,9 +115,9 @@ function Learn() {
 								some of the benefits of Tailwind. Namely we are once again
 								creating a custom class and CSS.
 							</p>
-						</div>
+						</div> */}
 						{/* Row 4 */}
-						<div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
+						{/* <div className='border border-gray-700 dark:border-gray-50 rounded col-span-2 shadow-lg'>
 							<Macbuttons>
 								<h3>How to customize Tailwind</h3>
 							</Macbuttons>
@@ -157,7 +149,7 @@ function Learn() {
 								and more. We'll talk about some ways to extend Tailwind and ways
 								we can go further.
 							</p>
-						</div>
+						</div> */}
 						{/* Row 4 End */}
 					</div>
 				</div>

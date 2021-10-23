@@ -12,7 +12,7 @@ function Cards({ icon, category, name, index, borderColor, bgColor }) {
 			className={` relative flex items-center rounded shadow-lg border-r-8 ${borderColor}`}>
 			{category ? choice : null}
 			<div className={iconClass}>{icon}</div>
-			<div className='bg-gray-300 dark:bg-gray-900 p-5 flex-grow font-bold '>
+			<div className='bg-gray-50 dark:bg-black p-5 flex-grow font-bold '>
 				{name}
 			</div>
 		</div>

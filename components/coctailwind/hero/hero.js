@@ -51,7 +51,7 @@ function Hero() {
 					id='teaser__image'
 					className='relative rounded-lg shadow-2xl border-4 dark:bg-transparent dark:backdrop border-purple-400 mb-6 md:mb-0'>
 					<Image
-						src='/hero-image.png'
+						src='/hero.png'
 						layout='responsive'
 						width={3306}
 						height={2074}
@@ -74,10 +74,16 @@ function Hero() {
 							View this site's code on
 							<strong className='font-bold'>
 								{' '}
-								<a href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
+								<a
+									className='hover:underline'
+									href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
 									Github
 								</a>
 							</strong>{' '}
+						</p>
+						<p>
+							Handcrafted with
+							<strong className='font-bold'> NextJS & Tailwind</strong>
 						</p>
 					</div>
 				</>
@@ -90,10 +96,16 @@ function Hero() {
 							View this site's code on
 							<strong className='font-bold'>
 								{' '}
-								<a href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
+								<a
+									className='hover:underline'
+									href='https://github.com/sunnydebjit/tailwind__lp/tree/coctailwind__framer_motion'>
 									Github
 								</a>
 							</strong>{' '}
+						</p>
+						<p>
+							Handcrafted with
+							<strong className='font-bold'> NextJS & Tailwind</strong>
 						</p>
 					</div>
 				</>
@@ -128,7 +140,7 @@ function Hero() {
 		<>
 			<section id='hero' className='relative'>
 				{/* Purple Bar */}
-				<div className=' absolute bg-gradient-to-b from-purple-700 to-purple-700 dark:bg-gradient-to-b dark:from-transparent dark:via-green-900 dark:to-black bottom-0 inset-x-0 h-96'></div>
+				<div className=' absolute bg-gradient-to-b from-gray-50 to-gray-50 dark:bg-gradient-to-b dark:from-transparent dark:via-green-900 dark:to-black bottom-0 inset-x-0 h-96'></div>
 				<div className='container mx-auto px-10 py-24 text-center'>
 					{/* Heading */}
 					<h1 className=' mb-4 text-5xl md:text-6xl font-extrabold '>

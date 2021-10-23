@@ -151,9 +151,11 @@ function Footer() {
 						<div>Copyright &copy; 2021-4055</div>
 						{/* Links */}
 						<div className='space-x-4'>
-							<a href='#'>Discord</a>
-							<a href='#'>Twitter</a>
-							<a href='#'>Linkedin</a>
+							{/* <a href='#'>Discord</a> */}
+							<a href='https://twitter.com/sunnydebjit'>Twitter</a>
+							<a href='https://www.linkedin.com/in/debjit-majumdar-0b003768/'>
+								Linkedin
+							</a>
 						</div>
 					</div>
 				</div>
@@ -161,7 +163,8 @@ function Footer() {
 				<div className='relative bg-black mt-28 text-gray-100 p-5'>
 					<h3 className='font-base text-center'>
 						A <span className='font-bold'>Debjit Majumdar</span> Initiative |
-						View this site's LightHouse Score
+						View this site on{' '}
+						<a className='hover:underline cursor-pointer'>Github</a>
 					</h3>
 				</div>
 			</StyleElements>

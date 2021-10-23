@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import { DiReact } from 'react-icons/di';
 import {
 	SiHtml5,
-	SiCss3,
+	SiSass,
 	SiJavascript,
 	SiReact,
 	SiTailwindcss,
@@ -21,11 +21,11 @@ import { MdOutlineDesignServices } from 'react-icons/md';
 
 function Buildsection() {
 	return (
-		<section className='pt-0 pb-24 bg-gray-300 dark:bg-gray-900'>
+		<section id='tech' className='pt-0 pb-24 bg-gray-50 dark:bg-black'>
 			<div className='container mx-auto px-10 space-y-5 md:space-y-0'>
 				<div className='mb-14 text-center '>
-					<h2 className='mb-4 text-5xl md:text-6xl text-gray-800 dark:text-gray-50 font-semibold'>
-						Technologies at work
+					<h2 className='mb-4 text-4xl md:text-5xl lg:text-6xl text-gray-800 dark:text-gray-50 font-semibold'>
+						Technologies I Work With
 					</h2>
 					<p className='text-lg md:text-2xl text-gray-700 dark:text-gray-100'>
 						My expertise lies with updated technologies on demand
@@ -56,10 +56,10 @@ const buildData = [
 	},
 	{
 		id: '02',
-		icon: <SiCss3 className='w-8 h-8' />,
+		icon: <SiSass className='w-8 h-8' />,
 		borderColor: 'border-orange-500',
 		bgColor: 'bg-orange-500',
-		name: 'Css 3',
+		name: 'Scss',
 		category: <HiCode className='h-full w-auto' />,
 	},
 	{

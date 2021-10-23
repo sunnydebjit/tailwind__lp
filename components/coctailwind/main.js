@@ -1,4 +1,4 @@
-import Projects from './Projects';
+import Projects from './Projects/Projects';
 import Buildsection from './buildsection/buildsection';
 import Faq from './faq/faq';
 import Hero from './hero/hero';
@@ -13,11 +13,12 @@ function Main() {
 			<Hero />
 			<Projects />
 			<Overview />
-			<Learn />
 			<Buildsection />
+			<Learn />
+
 			<Pricing />
-			<Faq />
-			<IphoneStack />
+			{/* <Faq /> */}
+			{/* <IphoneStack /> */}
 		</>
 	);
 }

@@ -64,21 +64,44 @@ export default Hamburgernav;
 function ItemList() {
 	return (
 		<div className=' px-10 absolute top-16 right-1 mr-0 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 dark:border-2 dark:border-purple-600 font-medium text-right p-5 rounded-lg shadow-2xl'>
-			<Link href='/coctailwind/login'>
-				<a className='block'>About</a>
+			<Link href='/'>
+				<a
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50`}>
+					Home
+				</a>
 			</Link>
-			<a href='#' className='block'>
-				Learn
-			</a>
-			<a href='#' className='block'>
-				Pricing
-			</a>
-			<a href='#' className='block'>
-				FAQ
-			</a>
-			<a href='#' className='block'>
-				Signup
-			</a>
+			<Link href='/#projects'>
+				<a
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+					Projects
+				</a>
+			</Link>
+			<Link href='/#overview'>
+				<a
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+					Overview
+				</a>
+			</Link>
+			<Link href='/#tech'>
+				<a
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+					Technologies
+				</a>
+			</Link>
+			<Link href='/#faqs'>
+				<a
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+					FAQ
+				</a>
+			</Link>
+			<div>
+				<a
+					download
+					href='/resume_debjit_majumdar_r2k21.pdf'
+					className={`inline-block hover:text-gray-900 dark:hover:text-gray-50 `}>
+					Resume
+				</a>
+			</div>
 		</div>
 	);
 }
