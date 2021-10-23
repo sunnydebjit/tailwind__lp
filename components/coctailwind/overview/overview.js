@@ -74,7 +74,7 @@ function Overview() {
 								<strong>2015</strong>: Managed Events for NVIDIA, ASUS,
 								GIGABYTE, AMD etc.
 							</p>
-							<p className=' p-10 rounded-lg  dark:bg-black/10 backdrop-blur-3xl text-green-800 dark: textgreene-200 shadow-lg border-2 border-green-600'>
+							<p className=' p-10 rounded-lg  dark:bg-black/10 backdrop-blur-3xl text-green-800 dark:text-green-200 shadow-lg border-2 border-green-600'>
 								<strong>2016</strong>: Solved Video Production problems for
 								clients
 							</p>
