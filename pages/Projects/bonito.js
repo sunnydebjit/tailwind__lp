@@ -73,7 +73,7 @@ function Bonito() {
 				<div className=' mb-10 md:grid grid-cols-2 gap-10 space-y-10 md:space-y-0'>
 					<div className='shadow-xl'>
 						<Image
-							src='/projects/bonito/T-Shirt MockUp_Front.jpg'
+							src='/projects/bonito/T-Shirt MockUp_Front.png'
 							layout='responsive'
 							width={1920}
 							height={1080}
@@ -83,7 +83,7 @@ function Bonito() {
 					</div>
 					<div className='shadow-xl'>
 						<Image
-							src='/projects/bonito/pouch.jpg'
+							src='/projects/bonito/pouch.png'
 							layout='intrinsic'
 							width={1920}
 							height={1080}

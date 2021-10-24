@@ -8,7 +8,7 @@ function Linkcomp({ section, links }) {
 				<a
 					key={`link__${index + 2}`}
 					href='#'
-					className='block text-gray-800 dark:text-gray-200 hover:underline '>
+					className='block text-gray-800 dark:text-gray-00 hover:underline '>
 					{link}
 				</a>
 			))}

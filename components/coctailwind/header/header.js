@@ -130,7 +130,7 @@ function Header() {
 							</Link> */}
 
 							<a
-								href='/resume_debjit_majumdar_r2k21.pdf'
+								href='/resume_debjit_majumdar_r32k21.pdf'
 								download
 								className='hidden lg:inline-block p-3 bg-gradient-to-br from-purple-500 to-purple-700 hover:to-purple-600 hover:bg-purple-200 text-purple-100 hover:text-white rounded shadow hover:shadow-xl transition duration-500'>
 								Resume
